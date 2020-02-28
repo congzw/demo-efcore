@@ -8,5 +8,12 @@
 
 how to use sqlLite browser with guid
 
-	select quote(Id),* from Accounts;
-	select * from Accounts where Id == X'00000000000000000000000000000001';
+	select 
+	quote(Id) as QUOTE, 
+	hex(Id) as HEX,
+	substr(hex(Id), 1, 8)
+	|| '-' || substr(hex(Id), 9, 4)
+	|| '-' || substr(hex(Id), 13, 4)
+	|| '-' || substr(hex(Id), 17, 4)
+	|| '-' || substr(hex(Id), 21, 12) as GUID,
+	* from Accounts;
