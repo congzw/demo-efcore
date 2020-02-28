@@ -18,8 +18,11 @@ namespace Foo.DAL
             base.OnModelCreating(modelBuilder);
 
             //todo
-            modelBuilder.Entity<Account>();
-            modelBuilder.Entity<Customer>();
+            modelBuilder.Entity<Account>().HasKey(x => x.Id);
+            modelBuilder.Entity<Account>().Property(x => x.Id).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Customer>().HasKey(x => x.Id);
+            modelBuilder.Entity<Customer>().Property(x => x.Id).ValueGeneratedOnAdd();
         }
     }
 }

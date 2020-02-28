@@ -1,4 +1,5 @@
 ﻿using System;
+using Foo.Common;
 using Foo.DAL;
 using Foo.Domain.Accounts;
 
@@ -15,7 +16,10 @@ namespace Foo.App.Boots
 
         public void Init()
         {
+            var mockGuidQueue = GuidHelper.CreateMockGuidQueue(4);
+
             var admin = new Account();
+            admin.Id = mockGuidQueue.Dequeue();
             admin.Username = "admin";
             admin.CreateAt = new DateTime(2000,1,1);
             admin.Nick = "ADMIN";
@@ -26,6 +30,7 @@ namespace Foo.App.Boots
             for (int i = 1; i <= 3; i++)
             {
                 var account = new Account();
+                account.Id = mockGuidQueue.Dequeue();
                 account.Username = "User" + i;
                 account.CreateAt = new DateTime(2000, 1, 1);
                 account.Nick = "用户" + i;
