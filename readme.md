@@ -2,6 +2,7 @@
 
 ## change list
 
+- 20200314 add remote for origin_gitlab_out
 - 20200228 init projects
 
 ## sqlLite tricks
