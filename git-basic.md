@@ -32,8 +32,6 @@
     git push -u origin --all
     git push -u origin --tags
 
- 
-
 ## how to track multi remotes
 
 tell master to track up-stream to "gitlab_home"
@@ -52,3 +50,24 @@ tell master to track up-stream to "origin"
 	remote = origin
 	merge = refs/heads/master
    
+## a demo for setup multi remotes track and how to switch
+
+1 clone an exist repos(git clone auto track master to origin/master)
+
+    git clone https://github.com/congzw/demo-efcore.git    
+
+2 add an remote repos
+
+    git remote add gitlab_home https://somehub.com/congzw/demo-efcore.git
+	git fetch gitlab_home
+
+3 edit, commit...
+
+4 tell master to track up-stream to "gitlab_home" or  "origin"
+
+	git branch -u gitlab_home/master
+	git branch -u origin/master
+
+5 push changes to up-stream
+    
+    git push
