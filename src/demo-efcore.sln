@@ -3,14 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foo.App", "Foo.App\Foo.App.csproj", "{F98F55E0-EC8D-4957-99C8-35BCBD24FAB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foo.App", "Foo.App\Foo.App.csproj", "{F98F55E0-EC8D-4957-99C8-35BCBD24FAB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foo.Libs", "Foo.Libs\Foo.Libs.csproj", "{63019B31-343E-4165-8AD2-417F405AC754}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foo.Libs", "Foo.Libs\Foo.Libs.csproj", "{63019B31-343E-4165-8AD2-417F405AC754}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{381620B3-26E0-4E2C-B775-70B854DA347E}"
 	ProjectSection(SolutionItems) = preProject
 		..\readme.md = ..\readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlDemo", "MySqlDemo\MySqlDemo.csproj", "{1FC19A0F-A35F-4028-915E-F3DE06CD2C17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{63019B31-343E-4165-8AD2-417F405AC754}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63019B31-343E-4165-8AD2-417F405AC754}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63019B31-343E-4165-8AD2-417F405AC754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC19A0F-A35F-4028-915E-F3DE06CD2C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC19A0F-A35F-4028-915E-F3DE06CD2C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC19A0F-A35F-4028-915E-F3DE06CD2C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC19A0F-A35F-4028-915E-F3DE06CD2C17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
